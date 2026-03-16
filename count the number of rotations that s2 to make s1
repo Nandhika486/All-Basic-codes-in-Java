@@ -1,0 +1,23 @@
+import java.util.*;
+//count the number of rotations that s2 to make s1
+public class  Main{
+  public static void main(String arg[]){
+    Scanner sc = new Scanner(System.in);
+    String s1=sc.nextLine();
+    String s2=sc.nextLine();
+    if(s1.length()!=s2.length()){
+      System.out.println(0);
+    }
+    else{
+      String temp=s2+s2;
+      if(temp.contains(s1)){
+        int index=temp.indexOf(s1);
+          System.out.println("left rotations: "+index);// it gives left rotations..
+      // for rotations s1.length()-left rotations..
+      int r=s1.length()-index;
+      System.out.println("Right rotations: "+r);
+      }
+    }
+    sc.close();
+  }
+}
