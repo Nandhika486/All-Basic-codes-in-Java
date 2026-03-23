@@ -9,7 +9,7 @@ String s2=sc.nextLine();
 char[] ch1=s1.toCharArray();
 char[] ch2=s2.toCharArray();
 // we can directly sort by Arrays.sort(ch1)
-// instead of bubble sort just use arrays.sort(ch1) both are same time complexity
+// instead of bubble sort just use arrays.sort(ch1) both are same time complexity..
 for(int i=0;i<s1.length()-1;i++){
   for(int j=0;j<s1.length()-i-1;j++){
     if(ch1[j]>ch1[j+1]){
